@@ -1,0 +1,5 @@
+{
+  "name": "Social Media Content Optimizer",
+  "description": "An application to analyze and correct content for YouTube, X (Twitter), and Facebook. Provide your draft to receive corrected suggestions and actionable advice based on each platform's best practices to maximize your reach and engagement.",
+  "requestFramePermissions": []
+}
