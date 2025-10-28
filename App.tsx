@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useMemo } from 'react';
 import { getYouTubeOptimization, getXOptimization, getFacebookOptimization } from './services/geminiService';
 import type { OptimizationResult } from './types';
@@ -233,6 +234,11 @@ export default function App() {
                 <Tabs activeTool={activeTool} setActiveTool={setActiveTool} />
                 <InputForm onSubmit={handleAnalyze} isLoading={currentIsLoading} activeTool={activeTool} />
                 <ResultDisplay result={currentResult} error={currentError} isLoading={currentIsLoading} hasAnalyzed={currentHasAnalyzed} activeTool={activeTool} />
+                <footer className="text-center py-6 border-t border-gray-700 mt-12">
+                    <p className="text-gray-500">
+                        Stworzone z ❤️ przez AI dla najlepszych twórców.
+                    </p>
+                </footer>
             </main>
         </div>
     );
